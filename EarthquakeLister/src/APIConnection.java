@@ -34,9 +34,9 @@ public class APIConnection {
 			//controlling response code for any problem
 			int responseCode = conn.getResponseCode();	
 			
-			//This response code for bad request, since API does not include data before 2021-12-18
+			//This response code for bad request, since API does not give more than 20 000 event
 			if(responseCode==400) {
-				System.out.println("WARNING: Date to be scanned must be after 2021-12-18!");
+				System.out.println("20351 matching events exceeds search limit of 20000. Modify the inputs to match fewer events.!");
 				System.exit(0);
 				return "";
 				
