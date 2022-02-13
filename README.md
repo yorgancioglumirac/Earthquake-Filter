@@ -2,7 +2,7 @@
 Filters the earthquakes according to date and country thanks to earthquake.usgs
 
 #INPUTS
-  - The number of days should not exceed 18.12.2021 because there is no data on the earthquake.usgs site before that.
+  - You should set your input so that no more than 20000 events displayed because earthquake.usgs does not produce results.
   - If the keyword entered into the program is substring in the place attribute of the earthquakes in the json file, the earthquake is listed.
   - Input must consist of english characters
   - Upper case and lower case character will not miss earthquakes, you can use both of them
