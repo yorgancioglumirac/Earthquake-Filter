@@ -36,7 +36,7 @@ public class APIConnection {
 			
 			//This response code for bad request, since API does not give more than 20 000 event
 			if(responseCode==400) {
-				System.out.println("20351 matching events exceeds search limit of 20000. Modify the inputs to match fewer events.!");
+				System.out.println("Matching events exceeds search limit of 20000. Modify the inputs to match fewer events.!");
 				System.exit(0);
 				return "";
 				
